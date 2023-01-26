@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build with g++ 14.0.1",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\*.cpp",
+				"-o",
+				"${fileDirname}\\Estaria.exe"
+			],
+			"options": {
+				"cwd": "C:\\msys64\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with clang++ 14.0.1",
+			"command": "C:\\msys64\\mingw64\\bin\\clang++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\*.cpp",
+				"-o",
+				"${fileDirname}\\Estaria.exe"
+			],
+			"options": {
+				"cwd": "C:\\msys64\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\clang++.exe"
+		}
+	]
+}
