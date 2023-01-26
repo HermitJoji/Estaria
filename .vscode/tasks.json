@@ -10,7 +10,8 @@
 				"-g",
 				"${workspaceFolder}\\*.cpp",
 				"-o",
-				"${fileDirname}\\Estaria.exe"
+				"${fileDirname}\\Estaria.exe",
+				"${fileDirname}\\Estaria.res"
 			],
 			"options": {
 				"cwd": "C:\\msys64\\mingw64\\bin"
