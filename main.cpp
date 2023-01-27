@@ -22,6 +22,7 @@ using std::chrono::system_clock;
 
 
 
+
 class Settings{
     public:
         string textSpeed {"normal"};
@@ -42,7 +43,7 @@ int writing(string text, bool endline, bool skip){
     }
     if (endline){ cout << endl;}
     if (skip){
-         if (settings.textSpeed == "normal"){sleep_for(400ms);}
+         if (settings.textSpeed == "normal"){sleep_for(250ms);}
          else if (settings.textSpeed == "fast"){sleep_for(100ms);}}
     return 0;
 }
@@ -529,7 +530,7 @@ void gameContinue(){
     int x;
     string y;
 
-    ifstream loadFile("save.txt");
+    ifstream loadFile("init.dat");
 
     if(loadFile){
         // deinitializing files
@@ -580,13 +581,13 @@ void gameContinue(){
         }
         else{writing("There is no save file available",1,1);}
     }
-    else{writing("Error: Save.txt not found!",1,1);}
+    else{writing("Error: init.dat not found!",1,1);}
     
 }
 
 void gameSave(){
 
-    ofstream saveFile("save.txt");
+    ofstream saveFile("init.dat");
 
     if(saveFile){
 
@@ -641,7 +642,7 @@ void gameSave(){
         saveFile.close();
         hideSaveFile();
     }
-    else{writing("Error: Save.txt not found!",1,1);}
+    else{writing("Error: init.dat not found!",1,1);}
     
 }
 
@@ -1532,7 +1533,7 @@ void settingsInterface(){
                 ofstream saveFile("save.txt");
 
                 if(saveFile){
-                    writing("Are you sure you want to delete your save file",0,1); 
+                    writing("Are you sure you want to delete your save file",1,1); 
                     cout << "[yes i know what i am doing] to proceed.\n";
                     cout << "> ";
                     getline(cin, stringInput);
@@ -1753,7 +1754,10 @@ void battle(){
 
 
 int main (){ 
+    
     SetConsoleOutputCP(CP_UTF8);
+    // ShellExecute(NULL,"runas","C:\\Program Files (x86)\\HermitJoji\\Estaria\\Estaria.exe","", NULL,SW_SHOWNORMAL);
+    
     {
 
  {

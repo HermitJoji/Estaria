@@ -1,1 +1,7 @@
-id ICON "C:\VsCode\Estaria Origin\sword.ico"
+#define ID_MANIFEST 1
+#ifndef RT_MANIFEST
+#define RT_MANIFEST MAKEINTRESOURCE(24)
+#endif
+
+id ICON "C:\VsCode\Estaria Origin\Icons\sword.ico"
+1 24 "C:\VsCode\Estaria Origin\Resources\Estaria.exe.manifest"

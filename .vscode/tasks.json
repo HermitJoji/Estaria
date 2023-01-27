@@ -11,7 +11,7 @@
 				"${workspaceFolder}\\*.cpp",
 				"-o",
 				"${fileDirname}\\Estaria.exe",
-				"${fileDirname}\\Estaria.res"
+				"C:\\VsCode\\Estaria Origin\\Resources\\Estaria.res"
 			],
 			"options": {
 				"cwd": "C:\\msys64\\mingw64\\bin"
