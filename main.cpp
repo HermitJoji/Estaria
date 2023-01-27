@@ -1530,7 +1530,7 @@ void settingsInterface(){
             }
  
             else if (userInput == 4){
-                ofstream saveFile("save.txt");
+                ofstream saveFile("init.dat");
 
                 if(saveFile){
                     writing("Are you sure you want to delete your save file",1,1); 
@@ -1539,10 +1539,12 @@ void settingsInterface(){
                     getline(cin, stringInput);
                         if (stringInput == "yes i know what i am doing"){
                             writing("Deleting save file",0,1); writing(".",0,1); writing("..",0,1); writing("...",1,1);  
-                            writing("save file deleted.",0,1); writing("return to [Main Menu] to apply changes.",1,1);
-                            saveFile << 0;  saveFile << "\n";
+                            writing("save file deleted.",0,1); writing(" Restart game to apply changes.",1,1);
+                            saveFile << 0;
                             saveFile.close();
                             hideSaveFile();
+                            cout << endl;
+                            break;
                         }
                         else{writing("Returning to settings....",1,1);}
                 }
