@@ -1,0 +1,45 @@
+cout << "╔══════════════════════════════════╗" << endl;
+cout << "╠ ╔═══════════╗     ╔════════════╗ ╣" << endl;
+cout << "║  [1]-[Fight]       [2]-[Defend]  ║" << endl;
+cout << "╠ ╚═══════════╝     ╚════════════╝ ╣" << endl;
+cout << "╠ ╔═══════════╗     ╔════════════╗ ╣" << endl;
+cout << "║  [3]-[Items]       [4]-[status]  ║" << endl;
+cout << "╠ ╚═══════════╝     ╚════════════╝ ╣" << endl;
+cout << "╠           ╔═════════╗            ╣" << endl;
+cout << "║            [0]-[Run]             ║" << endl;
+cout << "╠           ╚═════════╝            ╣" << endl;
+cout << "╚══════════════════════════════════╝" << endl;
+
+
+cout << "                   ╔═════════════════════════╗" << endl;
+cout << "                   ║          [BOSS]         ║" << endl;
+cout << "                   ╚═════════════════════════╝" << endl;
+
+cout << "╔═══════════════════════════════════════════════════════════════╗" << endl;
+cout << "╠ ╔═══════════════════════════╗     ╔═════════════════════════╗ ╣" << endl;
+if (checkpoints.goblinBoss){cout << "║   [1]-[The Goblin King] [✓] ";} 
+else if (checkpoints.goblinBossUnlocked && !checkpoints.goblinBoss){cout << "║     [1]-[The Goblin King]   ";}
+else{cout << "║  [-]-[---------------------]";}
+cout << setw(37) << "[-]-[-------------------]  ║" << endl;
+cout << "╠ ╚═══════════════════════════╝     ╚═════════════════════════╝ ╣" << endl;
+cout << "╠ ╔═══════════════════════════╗     ╔═════════════════════════╗ ╣" << endl;
+cout << "║  [-]-[---------------------]       [-]-[-------------------]  ║" << endl;
+cout << "╠ ╚═══════════════════════════╝     ╚═════════════════════════╝ ╣" << endl;
+cout << "╠                          ╔══════════╗                         ╣" << endl;
+cout << "║                           [0]-[Back]                          ║" << endl;
+cout << "╠                          ╚══════════╝                         ╣" << endl;
+cout << "╚═══════════════════════════════════════════════════════════════╝" << endl;
+
+cout << "╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗\n";
+cout << "║"; writing(" You win. but the victory was short lived, the goblins caught up",0,0); ;cout << "                                      ║\n"; sleep_for(0.3s);
+cout << "║"; writing(" You are surrounded with no way to escape.",0,0); ;cout << "                                                            ║\n"; sleep_for(0.3s);
+cout << "║                                                                                                      ║\n"; sleep_for(0.5s);
+cout << "║"; writing(" Suddenly, you hear a battle cry, people appear one by one to attack the goblins.",0,0); ;cout << "                     ║\n"; sleep_for(0.3s);
+cout << "║                                                                                                      ║\n";
+cout << "║"; writing(" [Grumpy Man]: which cunt decided it was a good idea to go around rifling all the goblins?!",0,0); ;cout << "           ║\n"; sleep_for(0.3s);
+cout << "║"; writing("               i only came here to farm a bit for some wine money and now we got work to do?!.",0,0); ;cout << "        ║\n"; sleep_for(0.3s);
+cout << "║"; writing("               oi kahn, emily,",0,0); writing(" let's get this over with quickly!.",0,0);cout << "                                     ║\n"; sleep_for(0.3s);
+cout << "║"; writing(" [Kahn]:       Alright, alright gustave. you know you don't always have to be grumpy right emi?",0,0); ;cout << "       ║\n"; sleep_for(0.3s);
+cout << "║"; writing(" [Emily]:      Exactly!, that's why he's sooo bald :P.",0,0); ;cout << "                                                ║\n"; sleep_for(0.3s);
+cout << "║"; writing("               oh, someones there, you still alive? whats your name?.",0,0); ;cout << "                                 ║\n"; sleep_for(0.3s);
+cout << "╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝\n";
